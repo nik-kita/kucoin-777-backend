@@ -23,7 +23,7 @@
         "url": "https://github.com/nik-kita/kucoin-777-back-end/issues"
     },
     "homepage": "https://github.com/nik-kita/kucoin-777-back-end#readme",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "dependencies": {
         "ioredis": "^4.28.2",
         "ws": "^8.4.0"
