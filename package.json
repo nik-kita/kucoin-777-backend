@@ -1,0 +1,33 @@
+{
+    "name": "@nik-kita/kucoin-777-back-end",
+    "description": "",
+    "files": [
+        "dist/**/*"
+    ],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "rm -fr dist && npx tsc -p tsconfig.json",
+        "prepare": "npm run build",
+        "start": "node dist",
+        "version": "git add -A",
+        "postversion": "git push",
+        "gitam": "git add -A && git commit -m ",
+        "patch": "npm version patch && npm publish --access public",
+        "first-install": "npm i -D typescript @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-airbnb-base eslint-plugin-import"
+    },
+    "keywords": [],
+    "author": "https://github.com/nik-kita <nik.moiseienko@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nik-kita/kucoin-777-back-end/issues"
+    },
+    "homepage": "https://github.com/nik-kita/kucoin-777-back-end#readme",
+    "version": "0.0.0",
+    "dependencies": {
+        "@types/ioredis": "^4.28.7",
+        "@types/ws": "^8.2.2",
+        "ioredis": "^4.28.2",
+        "ws": "^8.4.0"
+    }
+}
