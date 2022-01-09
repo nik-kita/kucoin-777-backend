@@ -7,7 +7,7 @@ async function main() {
 
     await sub.subscribe('to:client');
 
-    const wsServer = new Ws.Server({ port: 7777 })
+    new Ws.Server({ port: 7777 })
         .on('connection', (wsClient) => {
             pub.publish('from:client', 'connected');
 
